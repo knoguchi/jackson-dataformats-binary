@@ -34,6 +34,11 @@ public class ProtobufSchema implements FormatSchema
         _rootType = rootType;
     }
 
+    public ProtobufSchema(ProtobufMessage rootType) {
+        _source = null;
+        _rootType = rootType;
+    }
+
     /**
      * Method that can be called to choose different root type (of types
      * defined in protoc); a new schema instance will be constructed
